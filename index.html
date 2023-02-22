@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio - Dorian Schrom</title>
+  <meta name="author" content="Dorian Schrom" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="particles-js">
+  </div>
+  <div class="top">
+    <h1>Hi, I'm Dorian Schrom</h1>
+    <div class="main">
+      <div><br>
+        <h1>I'm a</h1>
+      </div>
+      <ul class="option">
+        <li><span>Progammer</span></li>
+        <li><span>Designer</span></li>
+        <li><span>Developer</span></li>
+        <li><span>Freelancer</span></li>
+      </ul>
+    </div>
+  </div>
+  <div onMouseOver="opacity: 0.5;cursor: pointer;" class="badges">
+    <img class="badge" onclick="window.location.href='https://www.linkedin.com/in/dorian-schrom-6bba4624b/'"
+      class="alignnone size-full wp-image-1303" src="pictures/linkedIn.png" alt="" width="50" height="50" />
+    <img class="badge" onclick="window.location.href='https://www.github.com/H4XV'"
+      class="alignnone size-full wp-image-1303" src="pictures/git.png" alt="" width="50" height="50" />
+  </div>
+
+
+
+
+  <div class="main-div" >
+    <div class="div-info" class="card">
+      <h2>Kontakt</h2>
+      <ul>
+        <div>
+          
+          <li>E-Mail: schrom.dorian@gmail.com</li>
+          <li>Discord: ΉΛXV#8858</li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="div-info">
+      <h2>Programmier Sprachen</h2>
+      <div>
+        <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"
+          onclick="window.location.href='https://www.gnu.org/software/bash/'" alt="bash" width="40" height="40" />
+        <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg"
+          onclick="window.location.href='https://www.blender.org/'" alt="blender" width="40" height="40" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+          onclick="window.location.href='https://de.wikipedia.org/wiki/C-Sharp'" alt=" csharp" width="40" height="40" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+          onclick="window.location.href='https://de.wikipedia.org/wiki/Cascading_Style_Sheets'" alt="css3" width="40"
+          height="40" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+          onclick="window.location.href='https://www.w3.org/html/'" alt="html5" width="40" height="40" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+          onclick="window.location.href='https://www.linux.org/'" alt="linux" width="40" height="40" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
+          onclick="window.location.href='https://www.adobe.com/products/photoshop.html?promoid=RBS7NL7F&mv=other'"
+          alt="photoshop" width="40" height="40" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+          onclick="window.location.href='https://www.python.org/'" alt="python" width="40" height="40" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+          onclick="window.location.href='https://www.typescriptlang.org/'" alt="typescript" width="40" height="40" />
+      </div>
+    </div>
+
+    <div class="div-info">
+      <h2>Erfahrung</h2>
+      <div>
+        <a>
+          <img src="pictures/ccc.svg" onclick="window.location.href='https://register.codingcontest.org/'" alt="ccc"
+            width="40" height="40" style="background: black; border-radius: 20px;" />
+          <img src="pictures/computercamp.png" onclick="window.location.href='https://wwww.computercamp.at'"
+            alt="computercamp" width="40" height="40" style="background: black; border-radius: 20px;" />
+          <img src="pictures/htl.webp" onclick="window.location.href='https://www.htl-donaustadt.at/home'"
+            alt="computercamp" width="40" height="40" style="background: black; border-radius: 20px;" />
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+<script src="writing.js"></script>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function () {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+</html>

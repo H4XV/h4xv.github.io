@@ -1,0 +1,210 @@
+* {
+
+	font-family: monospace;
+
+}
+
+html,
+body {
+	width: 100%;
+	height: 10%;
+	background: black;
+}
+
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font: normal 75% Arial, Helvetica, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 150vh;
+	background: #111;
+}
+
+h1 {
+	color: black;
+	font-size: 60px;
+	text-align: left;
+}
+h2 {
+	/* font-size: 2rem; */
+		padding-bottom: 13px;
+}
+a {
+	cursor: pointer;
+}
+img{
+	align-items: center;
+	margin-left: auto;
+  margin-right: auto;
+}
+#cl{
+		padding: 50%;
+	padding: 50%;
+	
+}
+
+.top {
+	
+background: white;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	padding: 10%	;
+	padding-left: 27.5%; padding-right: 27.5%
+}
+
+
+.main-div {
+	display: flex;
+		align-items: center;
+		justify-content: space-around;
+		position: absolute;
+		width: 100%;
+
+}
+
+.div-info {
+	font-size: 15;
+background-color: aliceblue;
+	display: flex;
+	padding: 20px;
+	margin-top: 50%;
+	flex-direction: column;
+	align-items: center;
+	min-width: 184px;
+	height: 400px;
+	width: 25%;
+	justify-content: center;
+}
+
+.div-info img:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+	font-weight: 0;
+}
+
+.main {
+	display: flex;
+		justify-content: center;
+}
+
+.main .text {
+	color: black;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.main .option {
+	padding-top: 2%;
+		height: 80px;
+	padding-left: 20px;
+		overflow: hidden;
+	/* margin-left: 0px;
+	height: 60px;
+	line-height: 90px;
+	overflow: hidden; */
+}
+
+.option li {
+	list-style: none;
+	color: black;
+	font-size: 60px;
+	position: relative;
+	top: -10px;
+	animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+	100% {
+		top: -380px;
+	}
+}
+
+.option li span {
+	position: relative;
+	margin: 0px 0px;
+	line-height: 90px;
+}
+
+.option li span::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 110%;
+	width: 100%;
+	background: white;
+	border-left: 5px solid black;
+	animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+	40%,
+	60% {
+		left: calc(100% + 10px);
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+.badges {
+		border-radius: 25px;
+	border: 1px;
+	color: black;
+	font-size: 10px;
+	padding: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
+	border: 1%;
+	margin: 0;
+	background: white;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+
+
+
+.badges:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+
+.contact {
+	border: 2px solid black;
+	border-radius: 25px;
+	color: black;
+	font-size: 10px;
+	padding: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 150px;
+	margin: 0;
+	background: white;
+	position: absolute;
+	top: 110%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+}
+
+
